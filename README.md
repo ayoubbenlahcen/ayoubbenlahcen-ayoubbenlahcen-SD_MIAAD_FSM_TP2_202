@@ -191,4 +191,17 @@ pour ce qui concirne ce TP2 on essayer de le faire en 3 partie :
                                    aussi la liaison entre les deux tableaux Patient et aussi RendezVous
                                    A savoir s'il vous plait que : map pedBy = "patient"
                                                                      patient est est attribue dans la classe RendezVous
-9. 
+
+    meme quand on a fait ça precdament dans le code , voici une exemple d'utilisation dans le cas de l'entité Patient :
+        @Entity @Data @AllArgsConstructor @NoArgsConstructor
+        public class Patient {
+            @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+            private Long id ;
+            private String nom ;
+            @Temporal(TemporalType.DATE)
+            private Date DateNaissance  ;
+            private boolean malade ;
+            @OneToMany(mappedBy = "patient")
+            private Collection<RendezVous> rendezVous ;
+        }
+    9. 
