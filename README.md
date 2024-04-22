@@ -216,4 +216,112 @@ pour ce qui concirne ce TP2 on essayer de le faire en 3 partie :
             private Collection<RendezVous> rendezVous ;
 
         }
-    9. 
+
+    """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+maintenant on va faire un teste:
+toute en implimentant l'inteface CommandLineRunner
+pour utiliser la  methode run qui va etre executer apres que Spring soit en marche
+ou bien on peut faire une methode qui va nous retournons un objet de type CommandeLineRunner  comme suite :
+	CommandLineRunner start(IHospitalService hospitalService,
+							IPationtRepository pationtRepository,
+							IMedecinRepository medecinRepository,
+							IRendezVousRepository rendezVousRepository){
+
+
+            /// ici on va faire notre petit code
+			}}
+a l'aide des objet passé en parametre de la fonctiion de start() on na la possiblite  de manipuler les donnes qui de la table
+pacient  medecine et aussi les autre entity
+
+
+la seule probleme quand on a avec cette facon d'implimentation c'est que chaque fois quand on a un nouveau entite
+il faut ajouter son trepository  a l'ensempble des repositories qui sont dans les parametre de la methode run
+
+ce qui n'est pas bien
+
+
+la solution c'st de faire ajouter un nouveau package 'Service' u qui va contenir l'inteface HospitalService
+telque dans cette dernier on va essayer d'implimenter les deferent fonctions qui correspond anotre code metier  comme suivant  :
+@Service
+@Transactional
+public class HospitalServiceImpl implements IHospitalService {
+    private IPationtRepository pationtRepository ;
+
+    private  IMedecinRepository medecinRepository ;
+    private IConsultationRepository consultationRepository ;
+    private IRendezVousRepository rendezxVousRepository ;
+
+    // cette c'est pour faire l'injection des dependance en utlisant la methde du constructeur
+    // il est possible de changer cette en utilsant les anotations @Autowired
+    // en le mettre avand la declaration de chaque variable de type Repository
+
+    public HospitalServiceImpl(IPationtRepository pationtRepository,
+                               IMedecinRepository medecinRepository,
+                               IConsultationRepository consultationRepository,
+                               IRendezVousRepository rendezxVousRepository) {
+
+        this.pationtRepository = pationtRepository;
+        this.medecinRepository = medecinRepository;
+        this.consultationRepository = consultationRepository;
+        this.rendezxVousRepository = rendezxVousRepository;
+    }
+
+    //ici on va faire notre code metier toute en utilisant repositoriee deja creer
+    //par exemple :  la fonction savePatient sui va nous permettons d'enregister un patient
+    //               ou la fonction findPatient() pour chercher un patient
+    //               et d'autre pour les autres entités
+}
+quand  on va utiliser la methode save par exemple  dans le cas suivant :
+Pacient pacientSave = reporitoryPatient.save(pacient) (toujours l'objet sauvEgarder eSt routourné donc je peut le recoupere si j'ai besoin de ça )
+
+
+l'un des remarques les plus importantes c'est de faire utiilser des ID des entités de type String:
+
+alors  pour cela  on va utiliser les UUID.randomUUID().toString() comme suite :
+
+supposant que l'entite est 'RendezVous'
+    a L'interieure de l'opository  correspodant a l'entite qui a un Id de type String on  va faire le modefication suivant:
+
+    -public interface IRendezVousRepository extends JpaRepository<RendezVous, String> {
+     }
+
+     -Aussi dans HospitalServiceImpl en va faire une modefication au niveau de la fonction sui va nous permettons de faire
+      le save de l'objet de RendezVous comme suite :
+
+
+@Service
+@Transactional
+public class HospitalServiceImpl implements IHospitalService {
+    private IPationtRepository pationtRepository ;
+
+    private  IMedecinRepository medecinRepository ;
+    private IConsultationRepository consultationRepository ;
+    private IRendezVousRepository rendezxVousRepository ;
+
+    // cette c'est pour faire l'injection des dependance en utlisant la methde du constructeur
+    // il est possible de changer cette en utilsant les anotations @Autowired
+    // en le mettre avand la declaration de chaque variable de type Repository
+
+    public HospitalServiceImpl(IPationtRepository pationtRepository,
+                               IMedecinRepository medecinRepository,
+                               IConsultationRepository consultationRepository,
+                               IRendezVousRepository rendezxVousRepository) {
+
+        this.pationtRepository = pationtRepository;
+        this.medecinRepository = medecinRepository;
+        this.consultationRepository = consultationRepository;
+        this.rendezxVousRepository = rendezxVousRepository;
+    }
+
+    public RendezVous saveRDV ( RendezVous rendez_vous){
+        // utiliser Le UUID pour generer une chaine aleatoire unique (qui depend de la date de systeme)
+        rendez_vous.setId(UUID.randomUUID().toString())
+        return rendezxVousRepository.save(rendez_vous)
+
+
+    }
+}
+
+si en veux faire la partie web en va ajouter un package 'web' ou en va creer
+une classe PatientController qui va nous permettons de faire  controller
+les intefaces de patient a partir de web.
