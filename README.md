@@ -48,4 +48,4 @@ pour ce qui concirne ce TP2 on essayer de le faire en 3 partie :
 
 
   ## TP2 partie 2 : la creation d'une Application Spring pour la gestion des Patients :
-  d
+  dans cette deusiemme partie du TP2 on a essayé de familiariser aver le #####mapping
