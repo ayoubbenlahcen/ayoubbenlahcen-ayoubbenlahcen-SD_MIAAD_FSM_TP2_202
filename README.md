@@ -293,7 +293,6 @@ supposant que l'entite est 'RendezVous'
 @Transactional
 public class HospitalServiceImpl implements IHospitalService {
     private IPationtRepository pationtRepository ;
-
     private  IMedecinRepository medecinRepository ;
     private IConsultationRepository consultationRepository ;
     private IRendezVousRepository rendezxVousRepository ;
@@ -317,8 +316,6 @@ public class HospitalServiceImpl implements IHospitalService {
         // utiliser Le UUID pour generer une chaine aleatoire unique (qui depend de la date de systeme)
         rendez_vous.setId(UUID.randomUUID().toString())
         return rendezxVousRepository.save(rendez_vous)
-
-
     }
 }
 
