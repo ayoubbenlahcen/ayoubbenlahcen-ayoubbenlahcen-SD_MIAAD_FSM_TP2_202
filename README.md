@@ -142,7 +142,7 @@ pour ce qui concirne ce TP2 on essayer de le faire en 3 partie :
       
       puis faire soit dans le cas d'utilisation de la base de donne H2:
       
-            spring.application.name=BEN-LAHCEN-AYOUB__TP2__Projet-Hospital__MIAAD__2024
+            spring.application.name=Hospital__TP2__Projet-Hospital__MIAAD__2024
 
             server.port=8085
 
@@ -152,7 +152,7 @@ pour ce qui concirne ce TP2 on essayer de le faire en 3 partie :
 
       ou le code suivant pour  migrer de H2 Database vers MySQ :
       
-        spring.application.name=BEN-LAHCEN-AYOUB__TP2__Projet-Hospital__MIAAD__2024
+        spring.application.name=Hospital__TP2__Projet-Hospital__MIAAD__2024
       
         server.port=8085
 
