@@ -289,11 +289,11 @@ supposant que l'entite est 'RendezVous'
       le save de l'objet de RendezVous comme suite :
 
 @Service
-@Transactional
-public class HospitalServiceImpl implements IHospitalService {
 
+@Transactional
+
+public class HospitalServiceImpl implements IHospitalService {
     private IPationtRepository pationtRepository ;
-    
     private  IMedecinRepository medecinRepository ;
     private IConsultationRepository consultationRepository ;
     private IRendezVousRepository rendezxVousRepository ;
