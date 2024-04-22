@@ -175,4 +175,20 @@ pour ce qui concirne ce TP2 on essayer de le faire en 3 partie :
         spring.jpa.hibernate.ddl-auto=update
 
         spring.jpa.properties.hibernate.dialect= org.hibernate.dialect.MariaDBDialect
-8.
+
+      Voivci le code que j'ai fais comme teste:
+![image](https://github.com/ayoubbenlahcen/ayoubbenlahcen-ayoubbenlahcen-SD_MIAAD_FSM_TP2_2024/assets/152870306/58fcd53f-2c45-4ce5-9596-e0ddb966266c)
+![image](https://github.com/ayoubbenlahcen/ayoubbenlahcen-ayoubbenlahcen-SD_MIAAD_FSM_TP2_2024/assets/152870306/7098945b-acb2-4461-85d8-9e4e75b954a0)
+
+8. Le plus imoortant maintenant c'est comment Spring arriver de connaitre les entites quannt on a  dans notre application alors la reponce c'est grace au notation suivant suivant :
+
+  - @Entity : qui indique que la classe suivant va etre une table dans la base de donnée
+  - @Data   : pour les getter et les setter
+  - @AllArgsConstructor : pour un constructeur avec tout les parametre
+  - @NoArgsConstructor : pour un contructeur sans parametre
+  - @Id @GeneratedValue(strategy = GenerationType.IDENTITY) : pour specifier Id de l'entite puis il va etre incrementer automatiquement grace a @GeneratedValue
+  - @OneToMany(mappedBy = "patient") : c'est pour faire le mapping autrement dite faire les multiplicite et
+                                   aussi la liaison entre les deux tableaux Patient et aussi RendezVous
+                                   A savoir s'il vous plait que : map pedBy = "patient"
+                                                                     patient est est attribue dans la classe RendezVous
+9. 
