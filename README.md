@@ -288,11 +288,8 @@ supposant que l'entite est 'RendezVous'
      -Aussi dans HospitalServiceImpl en va faire une modefication au niveau de la fonction sui va nous permettons de faire
       le save de l'objet de RendezVous comme suite :
 
-
 @Service
-
 @Transactional
-
 public class HospitalServiceImpl implements IHospitalService {
 
     private IPationtRepository pationtRepository ;
