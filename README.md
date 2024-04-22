@@ -102,7 +102,7 @@ pour ce qui concirne ce TP2 on essayer de le faire en 3 partie :
 ![image](https://github.com/ayoubbenlahcen/ayoubbenlahcen-ayoubbenlahcen-SD_MIAAD_FSM_TP2_2024/assets/152870306/feb67b44-98db-4d2b-b2f1-16c3987693a1)
 
 
-  1.4. L'entité Consultation ayant les attributs :
+  1.5. L'entité Consultation ayant les attributs :
        
        - id de type Long
        
