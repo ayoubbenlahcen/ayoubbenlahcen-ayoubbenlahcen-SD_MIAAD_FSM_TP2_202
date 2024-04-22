@@ -68,7 +68,8 @@ pour ce qui concirne ce TP2 on essayer de le faire en 3 partie :
        - une collection de type RendezVous
    
        - malade de type boolean
-   
+   ![image](https://github.com/ayoubbenlahcen/ayoubbenlahcen-ayoubbenlahcen-SD_MIAAD_FSM_TP2_2024/assets/152870306/e9a94961-6b1c-4b01-a4d0-23f0cf0c85f4)
+
    
    1.2. L'entité RendezVous ayant les attributs :
    
@@ -81,6 +82,8 @@ pour ce qui concirne ce TP2 on essayer de le faire en 3 partie :
        - un patient de type Patient
 
        - un medecin de type Medecin
+   ![image](https://github.com/ayoubbenlahcen/ayoubbenlahcen-ayoubbenlahcen-SD_MIAAD_FSM_TP2_2024/assets/152870306/fc07d77c-561c-47d7-bf6f-59080727e5c3)
+
 
   1.3. L'entité Medecin ayant les attributs :
    
@@ -93,6 +96,11 @@ pour ce qui concirne ce TP2 on essayer de le faire en 3 partie :
        - specialite de type String
        
        - une collection des rendez-vous
+![image](https://github.com/ayoubbenlahcen/ayoubbenlahcen-ayoubbenlahcen-SD_MIAAD_FSM_TP2_2024/assets/152870306/456a785d-0353-4fbe-adbb-ef97c01b4e5e)
+
+  1.4. La classe Enumerer StatusRDV :
+![image](https://github.com/ayoubbenlahcen/ayoubbenlahcen-ayoubbenlahcen-SD_MIAAD_FSM_TP2_2024/assets/152870306/feb67b44-98db-4d2b-b2f1-16c3987693a1)
+
 
   1.4. L'entité Consultation ayant les attributs :
        
@@ -103,6 +111,8 @@ pour ce qui concirne ce TP2 on essayer de le faire en 3 partie :
        - rapport de type string
        
        - un rendez-vous de type RendezVous
+![image](https://github.com/ayoubbenlahcen/ayoubbenlahcen-ayoubbenlahcen-SD_MIAAD_FSM_TP2_2024/assets/152870306/40a8d361-9a07-432b-825e-08729cdfa229)
+
 
 3. Configurer l'unité de persistance dans le ficher application.properties
 
