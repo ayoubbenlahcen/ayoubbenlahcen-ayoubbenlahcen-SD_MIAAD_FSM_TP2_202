@@ -19,7 +19,7 @@ Mais tout d'abord, voici l'architecture de notre première application Spring:
 ![image](https://github.com/ayoubbenlahcen/ayoubbenlahcen-ayoubbenlahcen-SD_MIAAD_FSM_TP2_2024/assets/152870306/dcb8fc41-c2c9-422b-947d-c3a7eac7dac4)
 
    2. Configurer l'unité de persistance dans le ficher application.properties
-     Voici la configuration qu'on a fait :
+     Voici la configuration que nous avons faite :
      
 ![image](https://github.com/ayoubbenlahcen/ayoubbenlahcen-ayoubbenlahcen-SD_MIAAD_FSM_TP2_2024/assets/152870306/b3c979f0-410d-4c8c-9436-1de3c7a7349b)
 
