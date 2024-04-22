@@ -26,6 +26,7 @@ pour ce qui concirne ce TP2 on essayer de le faire en 3 partie :
 ![image](https://github.com/ayoubbenlahcen/ayoubbenlahcen-ayoubbenlahcen-SD_MIAAD_FSM_TP2_2024/assets/152870306/e98e9052-0a3e-4ff6-b6b3-e8b89afb139a)
 
   5. Tester quelques opérations de gestion de patients :
+     
       - Ajouter des patients
       - Consulter tous les patients
       - Consulter un patient
