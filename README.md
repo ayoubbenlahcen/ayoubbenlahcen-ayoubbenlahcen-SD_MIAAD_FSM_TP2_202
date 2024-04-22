@@ -217,7 +217,7 @@ pour ce qui concirne ce TP2 on essayer de le faire en 3 partie :
 
         }
 
-    """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 maintenant on va faire un teste:
 toute en implimentant l'inteface CommandLineRunner
 pour utiliser la  methode run qui va etre executer apres que Spring soit en marche
@@ -226,8 +226,6 @@ ou bien on peut faire une methode qui va nous retournons un objet de type Comman
 							IPationtRepository pationtRepository,
 							IMedecinRepository medecinRepository,
 							IRendezVousRepository rendezVousRepository){
-
-
             /// ici on va faire notre petit code
 			}}
 a l'aide des objet passé en parametre de la fonctiion de start() on na la possiblite  de manipuler les donnes qui de la table
