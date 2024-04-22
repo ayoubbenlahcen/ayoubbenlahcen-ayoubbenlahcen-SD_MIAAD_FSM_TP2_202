@@ -293,6 +293,7 @@ supposant que l'entite est 'RendezVous'
 @Transactional
 
 public class HospitalServiceImpl implements IHospitalService {
+
     private IPationtRepository pationtRepository ;
     private  IMedecinRepository medecinRepository ;
     private IConsultationRepository consultationRepository ;
