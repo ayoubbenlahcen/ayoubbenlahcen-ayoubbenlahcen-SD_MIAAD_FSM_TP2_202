@@ -193,15 +193,27 @@ pour ce qui concirne ce TP2 on essayer de le faire en 3 partie :
                                                                      patient est est attribue dans la classe RendezVous
 
     meme quand on a fait ça precdament dans le code , voici une exemple d'utilisation dans le cas de l'entité Patient :
+    
         @Entity @Data @AllArgsConstructor @NoArgsConstructor
+    
         public class Patient {
+    
+
             @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+
             private Long id ;
+
             private String nom ;
+
             @Temporal(TemporalType.DATE)
+
             private Date DateNaissance  ;
+
             private boolean malade ;
+
             @OneToMany(mappedBy = "patient")
+
             private Collection<RendezVous> rendezVous ;
+
         }
     9. 
