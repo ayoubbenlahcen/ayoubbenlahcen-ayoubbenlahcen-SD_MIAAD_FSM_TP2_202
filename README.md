@@ -180,7 +180,7 @@ Mais tout d'abord, voici l'architecture de notre première application Spring:
 ![image](https://github.com/ayoubbenlahcen/ayoubbenlahcen-ayoubbenlahcen-SD_MIAAD_FSM_TP2_2024/assets/152870306/58fcd53f-2c45-4ce5-9596-e0ddb966266c)
 ![image](https://github.com/ayoubbenlahcen/ayoubbenlahcen-ayoubbenlahcen-SD_MIAAD_FSM_TP2_2024/assets/152870306/7098945b-acb2-4461-85d8-9e4e75b954a0)
 
-8. Le plus imoortant maintenant c'est comment Spring arriver de connaitre les entites quannt on a  dans notre application alors la reponce c'est grace au notation suivant suivant :
+8. Le plus important maintenant est de comprendre comment Spring parvient à reconnaître les entités dans notre application. La réponse réside dans les annotations suivantes :
 
   - @Entity : qui indique que la classe suivant va etre une table dans la base de donnée
   - @Data   : pour les getter et les setter
@@ -192,30 +192,27 @@ Mais tout d'abord, voici l'architecture de notre première application Spring:
                                    A savoir s'il vous plait que : map pedBy = "patient"
                                                                      patient est est attribue dans la classe RendezVous
 
-    meme quand on a fait ça precdament dans le code , voici une exemple d'utilisation dans le cas de l'entité Patient :
+    Même si nous avons utilisé ces annotations précédemment dans le code, voici un exemple d'utilisation pour l'entité Patient :
     
-        @Entity @Data @AllArgsConstructor @NoArgsConstructor
-    
-        public class Patient {
-    
+ @Entity
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class Patient {
 
-            @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
-            private Long id ;
+    private String nom;
 
-            private String nom ;
+    @Temporal(TemporalType.DATE)
+    private Date DateNaissance;
 
-            @Temporal(TemporalType.DATE)
+    private boolean malade;
 
-            private Date DateNaissance  ;
-
-            private boolean malade ;
-
-            @OneToMany(mappedBy = "patient")
-
-            private Collection<RendezVous> rendezVous ;
-
-        }
+    @OneToMany(mappedBy = "patient")
+    private Collection<RendezVous> rendezVous;
+}
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 maintenant on va faire un teste:
