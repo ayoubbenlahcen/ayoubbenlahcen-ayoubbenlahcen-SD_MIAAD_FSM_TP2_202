@@ -45,3 +45,6 @@ pour ce qui concirne ce TP2 on essayer de le faire en 3 partie :
 ![image](https://github.com/ayoubbenlahcen/ayoubbenlahcen-ayoubbenlahcen-SD_MIAAD_FSM_TP2_2024/assets/152870306/0ead5a5f-f3f0-4344-a4e7-a905d1e937f2)
 
   8. Comme dans l'architecture de l'application on a un package qui s'appel 'web'  celui la va jouer un role essentiel lorsque on va attaquer la partie Web dans la deusiemme partie de ce TP2.
+
+
+  ## TP2 partie 2 : la creation d'une Application Spring pour la gestion des Patients : 
