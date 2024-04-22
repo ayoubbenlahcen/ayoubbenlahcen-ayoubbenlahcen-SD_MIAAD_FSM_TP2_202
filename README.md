@@ -52,14 +52,23 @@ pour ce qui concirne ce TP2 on essayer de le faire en 3 partie :
 ![image](https://github.com/ayoubbenlahcen/ayoubbenlahcen-ayoubbenlahcen-SD_MIAAD_FSM_TP2_2024/assets/152870306/2b5426f6-e5cb-4042-984a-14ce182be43f)
 
 1. Créer les entités JPA Patient  :
+   
    1.1. L'entité Patient ayant les attributs :
+   
        - id de type Long
+   
        - nom de type String
+   
        - dateNaissanec de type Date
+   
        - malade de type boolean
+   
        - score de type int
+   
        - une collection de type RendezVous
+   
        - malade de type boolean
+   
    
    1.2. L'entité RendezVous ayant les attributs :
        - id de type Long
