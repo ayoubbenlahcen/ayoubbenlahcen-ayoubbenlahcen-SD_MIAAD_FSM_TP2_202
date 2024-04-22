@@ -71,41 +71,63 @@ pour ce qui concirne ce TP2 on essayer de le faire en 3 partie :
    
    
    1.2. L'entité RendezVous ayant les attributs :
+   
        - id de type Long
+   
        - Date de  ype Date
+
        - Status de type StatusRDV telque  StatusRDV est une classe Enumerer qui peut predre soit EN_Courr , Annule , traiter .
+
        - un patient de type Patient
+
        - un medecin de type Medecin
 
   1.3. L'entité Medecin ayant les attributs :
+   
        - id de type Long
+       
        - nom de  type String
+       
        - email de type String
+       
        - specialite de type String
+       
        - une collection des rendez-vous
 
   1.4. L'entité Consultation ayant les attributs :
+       
        - id de type Long
+       
        - DateConsultation de type Date
+       
        - rapport de type string
+       
        - un rendez-vous de type RendezVous
 
 3. Configurer l'unité de persistance dans le ficher application.properties
-       c'est comme la partie 1 de ce TP2.
+
+   c'est comme la partie 1 de ce TP2.
    
 5. Créer les interfaces JPA Repositories basée sur Spring data
+
        telque on  a creer un package Repository  ou on a creer pour chaque entité une inteface Repository ou on va faire l'ensempble des prototype  ous bien les syntace que Spring utilse pour faire la manipulation
        des donnes correspond a l'entite :
+
        Voici les defferents Repositories qu'on a  creé :
+
          - IConsultationRepository
+
          - IMedecinRepository
+
          - IPationtRepository
+
          - IRendezVousRepository
 
-      Comme j'ai dit deja un repository pour chaque netité , et voici la forme de chaque repository :
+   Comme j'ai dit deja un repository pour chaque netité , et voici la forme de chaque repository :
+
    on va prendre l'exemple de  IPationtRepository et pour les autre ils ont la meme forme seulement au niveau du nom de l'inteface ou il ya le changement et l'entite qui va lieé a le repository aussi il faut faire attention au
-   "extends JpaRepository<Patient, Long>" c'est a dire pour qu'un repository marcher bien il faut qu'il va heriter a partir de JpaRepository , et pour  <Patient, Long> comme j'ai dit deja  : Patient c'est l'etité dont la quel ce repository est construit  , Long ; c'est pour le type de l'id de l'entité.
-   ![image](https://github.com/ayoubbenlahcen/ayoubbenlahcen-ayoubbenlahcen-SD_MIAAD_FSM_TP2_2024/assets/152870306/dd9adb20-9702-49f7-ac5b-21cf02408eae)
+   "extends JpaRepository<Patient, Long>" c'est a dire pour qu'un repository marcher bien il faut qu'il va heriter a partir de JpaRepository , et pour  <Patient, Long> comme j'ai dit deja  : Patient c'est l'etité dont la quel ce repository     est construit  , Long ; c'est pour le type de l'id de l'entité.
+![image](https://github.com/ayoubbenlahcen/ayoubbenlahcen-ayoubbenlahcen-SD_MIAAD_FSM_TP2_2024/assets/152870306/dd9adb20-9702-49f7-ac5b-21cf02408eae)
 
 7. Tester quelques opérations de gestion de patients :
     - Ajouter des patients
