@@ -41,14 +41,14 @@ Mais tout d'abord, voici l'architecture de notre première application Spring:
 ![image](https://github.com/ayoubbenlahcen/ayoubbenlahcen-ayoubbenlahcen-SD_MIAAD_FSM_TP2_2024/assets/152870306/edaa0657-a017-45be-abd9-3508556cc4bc)
 
   7. Migrer de H2 Database vers MySQL
-     - pour faire ça on fait une petit configuration au niveau du fichier application.properties commme l'image suivant montre :
+     - Pour faire cela, nous avons effectué une petite configuration au niveau du fichier application.properties, comme l'image suivante le montre :
 ![image](https://github.com/ayoubbenlahcen/ayoubbenlahcen-ayoubbenlahcen-SD_MIAAD_FSM_TP2_2024/assets/152870306/0ead5a5f-f3f0-4344-a4e7-a905d1e937f2)
 
-  8. Comme dans l'architecture de l'application on a un package qui s'appel 'web'  celui la va jouer un role essentiel lorsque on va attaquer la partie Web dans la deusiemme partie de ce TP2.
+  8. Comme dans l'architecture de l'application, nous avons un package appelé 'web' qui jouera un rôle essentiel lorsque nous attaquerons la partie Web dans la deuxième partie de ce TP2.
 
 
   ## TP2 partie 2 : la creation d'une Application Spring pour la gestion des Patients :
-  dans cette deusiemme partie du TP2 on a essayé de familiariser aver le Mapping mais avant de faire parler sur ça je vous ivte de faire voir L'architecture de notre application qui est montré dans l'image suivante :
+  Dans cette deuxième partie du TP2, nous avons essayé de nous familiariser avec le Mapping. Avant d'en parler, je vous invite à voir l'architecture de notre application qui est montrée dans l'image suivante  :
 ![image](https://github.com/ayoubbenlahcen/ayoubbenlahcen-ayoubbenlahcen-SD_MIAAD_FSM_TP2_2024/assets/152870306/2b5426f6-e5cb-4042-984a-14ce182be43f)
 
 1. Créer les entités JPA Patient  :
