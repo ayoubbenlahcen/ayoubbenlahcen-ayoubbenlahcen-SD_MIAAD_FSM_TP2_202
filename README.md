@@ -227,7 +227,6 @@ ou bien on peut faire une methode qui va nous retournons un objet de type Comman
 							IPationtRepository pationtRepository,
 							IMedecinRepository medecinRepository,
 							IRendezVousRepository rendezVousRepository){
-
 	    /// ici on va faire notre petit code
 			}}
    
@@ -266,7 +265,6 @@ public class HospitalServiceImpl implements IHospitalService {
         this.consultationRepository = consultationRepository;
         this.rendezxVousRepository = rendezxVousRepository;
     }
-
     //ici on va faire notre code metier toute en utilisant repositoriee deja creer
     //par exemple :  la fonction savePatient sui va nous permettons d'enregister un patient
     //               ou la fonction findPatient() pour chercher un patient
