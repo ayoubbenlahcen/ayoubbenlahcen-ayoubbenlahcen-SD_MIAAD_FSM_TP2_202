@@ -19,6 +19,7 @@ pour ce qui concirne ce TP2 on essayer de le faire en 3 partie :
 
   2. Configurer l'unité de persistance dans le ficher application.properties
      Voici la configuration qu'on a fait :
+     
 ![image](https://github.com/ayoubbenlahcen/ayoubbenlahcen-ayoubbenlahcen-SD_MIAAD_FSM_TP2_2024/assets/152870306/b3c979f0-410d-4c8c-9436-1de3c7a7349b)
 
   4. Créer l'interface JPA Repository basée sur Spring data
