@@ -270,6 +270,7 @@ public class HospitalServiceImpl implements IHospitalService {
     //               ou la fonction findPatient() pour chercher un patient
     //               et d'autre pour les autres entités
 }
+
 quand  on va utiliser la methode save par exemple  dans le cas suivant :
 Pacient pacientSave = reporitoryPatient.save(pacient) (toujours l'objet sauvEgarder eSt routourné donc je peut le recoupere si j'ai besoin de ça )
 
