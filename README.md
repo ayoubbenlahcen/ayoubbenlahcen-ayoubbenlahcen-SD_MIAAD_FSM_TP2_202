@@ -18,15 +18,15 @@ pour ce qui concirne ce TP2 on essayer de le faire en 3 partie :
          Voici une image de l'implimentation : 
 ![image](https://github.com/ayoubbenlahcen/ayoubbenlahcen-ayoubbenlahcen-SD_MIAAD_FSM_TP2_2024/assets/152870306/dcb8fc41-c2c9-422b-947d-c3a7eac7dac4)
 
-  2. Configurer l'unité de persistance dans le ficher application.properties
+   2. Configurer l'unité de persistance dans le ficher application.properties
      Voici la configuration qu'on a fait :
      
 ![image](https://github.com/ayoubbenlahcen/ayoubbenlahcen-ayoubbenlahcen-SD_MIAAD_FSM_TP2_2024/assets/152870306/b3c979f0-410d-4c8c-9436-1de3c7a7349b)
 
-  4. Créer l'interface JPA Repository basée sur Spring data
+   4. Créer l'interface JPA Repository basée sur Spring data
 ![image](https://github.com/ayoubbenlahcen/ayoubbenlahcen-ayoubbenlahcen-SD_MIAAD_FSM_TP2_2024/assets/152870306/e98e9052-0a3e-4ff6-b6b3-e8b89afb139a)
 
-  5. Tester quelques opérations de gestion de patients :
+   5. Tester quelques opérations de gestion de patients :
      
       - Ajouter des patients
       - Consulter tous les patients
@@ -47,4 +47,5 @@ pour ce qui concirne ce TP2 on essayer de le faire en 3 partie :
   8. Comme dans l'architecture de l'application on a un package qui s'appel 'web'  celui la va jouer un role essentiel lorsque on va attaquer la partie Web dans la deusiemme partie de ce TP2.
 
 
-  ## TP2 partie 2 : la creation d'une Application Spring pour la gestion des Patients : 
+  ## TP2 partie 2 : la creation d'une Application Spring pour la gestion des Patients :
+  d
