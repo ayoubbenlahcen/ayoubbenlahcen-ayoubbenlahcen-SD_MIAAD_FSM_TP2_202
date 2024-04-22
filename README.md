@@ -6,7 +6,7 @@ La première partie consiste à voir comment installer IntelliJ, puis à connaî
 Après la création du projet, que ce soit à partir de IntelliJ IDEA ou à partir de Spring Starter, nous avons essayé de réaliser les tâches suivantes :
 
   ## TP2 partie 1 : installation creation de la premiere Application Spring : 
-    Mais tous d'abord voici l'arrchitecture de notre Premmier application Spring: 
+Mais tout d'abord, voici l'architecture de notre première application Spring:  
 ![image](https://github.com/ayoubbenlahcen/ayoubbenlahcen-ayoubbenlahcen-SD_MIAAD_FSM_TP2_2024/assets/152870306/0c7c38e4-bc25-4ca5-9835-693eb6d32269)
 
     1. Créer l'entité JPA Patient ayant les attributs :
