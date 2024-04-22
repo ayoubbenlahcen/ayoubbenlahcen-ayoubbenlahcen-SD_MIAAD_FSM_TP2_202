@@ -1,6 +1,7 @@
 # SD_MIAAD_FSM_TP2_2024 petit raport
 
 Pour ce qui concerne ce TP2, nous avons essayé de le diviser en 3 parties :
+
 La première partie consiste à voir comment installer IntelliJ, puis à connaître comment créer un projet Spring :
 Après la création du projet, que ce soit à partir de IntelliJ IDEA ou à partir de Spring Starter, nous avons essayé de réaliser les tâches suivantes :
 
