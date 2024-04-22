@@ -5,6 +5,7 @@ pour ce qui concirne ce TP2 on essayer de le faire en 3 partie :
   puis connaitre comment creer un projet Spring : 
   apres la creation du projet soit a partir de IDE intellij ou a partir spring starter
   on essayer de faire les choses suivantes :
+  ## TP2 partie 1 : installation creation de pramier Application Spring : 
     Mais tous d'abord voici l'arrchitecture de notre Premmier application Spring: 
 ![image](https://github.com/ayoubbenlahcen/ayoubbenlahcen-ayoubbenlahcen-SD_MIAAD_FSM_TP2_2024/assets/152870306/0c7c38e4-bc25-4ca5-9835-693eb6d32269)
 
