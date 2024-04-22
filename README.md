@@ -139,18 +139,30 @@ pour ce qui concirne ce TP2 on essayer de le faire en 3 partie :
 
       maitenant pour tester est ce que notre base de donne est creé avce succée  on a besoin de specifier où notre base de donées se trouve c'est pour cela on va partir vers
       le fichier  'application.properties'
+      
       puis faire soit dans le cas d'utilisation de la base de donne H2:
+      
             spring.application.name=BEN-LAHCEN-AYOUB__TP2__Projet-Hospital__MIAAD__2024
+
             server.port=8085
+
             spring.datasource.url=jdbc:h2:mem:hospital-db
+
             spring.h2.console.enabled=true
 
       ou le code suivant pour  migrer de H2 Database vers MySQ :
+      
         spring.application.name=BEN-LAHCEN-AYOUB__TP2__Projet-Hospital__MIAAD__2024
+      
         server.port=8085
+
         spring.datasource.url=jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/products-db?createDatabaseIfNotExist=true
+
         spring.datasource.username=${MYSQL_USER:root}
+
         spring.datasource.password=${MYSQL_PWD:}
+
         spring.jpa.hibernate.ddl-auto=update
+
         spring.jpa.properties.hibernate.dialect= org.hibernate.dialect.MariaDBDialect
 8.
