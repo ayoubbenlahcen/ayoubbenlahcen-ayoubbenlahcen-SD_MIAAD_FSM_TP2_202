@@ -313,3 +313,7 @@ Aussi, dans la classe HospitalServiceImpl, nous allons apporter une modification
 
 
 Si nous voulons ajouter une partie web, nous allons créer un package 'web' où nous créerons une classe PatientController qui nous permettra de contrôler les interfaces du patient à partir du web.
+On va le faire dans le prochain TP . 
+
+![image](https://github.com/ayoubbenlahcen/ayoubbenlahcen-ayoubbenlahcen-SD_MIAAD_FSM_TP2_2024/assets/152870306/42b38f71-9d05-47fd-b0cf-e76aa2a959cf)
+
