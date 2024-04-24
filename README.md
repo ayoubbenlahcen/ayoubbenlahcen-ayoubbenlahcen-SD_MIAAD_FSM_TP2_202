@@ -277,8 +277,7 @@ Supposons que l'entité soit 'RendezVous'.
     -public interface IRendezVousRepository extends JpaRepository<RendezVous, String> {
      }
 
-     -Aussi dans HospitalServiceImpl en va faire une modefication au niveau de la fonction saveRDV qui va nous permettons de faire
-      le save de l'objet de RendezVous comme suite :
+Aussi, dans la classe HospitalServiceImpl, nous allons apporter une modification à la fonction saveRDV qui nous permettra d'effectuer la sauvegarde de l'objet RendezVous comme suit :
 
 @Service
 @Transactional
