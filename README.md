@@ -120,8 +120,8 @@ Mais tout d'abord, voici l'architecture de notre première application Spring:
    
 5. Créer les interfaces JPA Repositories basée sur Spring data
 
-       telque on  a creer un package Repository  ou on a creer pour chaque entité une inteface Repository ou on va faire l'ensempble des prototype  ous bien les syntace que Spring utilse pour faire la manipulation
-       des donnes correspond a l'entite :
+         - Tel que nous avons créé un package Repository où nous avons créé une interface Repository pour chaque entité, ou nous allons définir l'ensemble des prototypes, ainsi que les syntaxes que Spring utilise pour manipuler les données correspondant à chaque entité.
+       
 
        Voici les defferents Repositories qu'on a  creé :
 
@@ -282,7 +282,7 @@ supposant que l'entite est 'RendezVous'
     -public interface IRendezVousRepository extends JpaRepository<RendezVous, String> {
      }
 
-     -Aussi dans HospitalServiceImpl en va faire une modefication au niveau de la fonction sui va nous permettons de faire
+     -Aussi dans HospitalServiceImpl en va faire une modefication au niveau de la fonction saveRDV qui va nous permettons de faire
       le save de l'objet de RendezVous comme suite :
 
 @Service
