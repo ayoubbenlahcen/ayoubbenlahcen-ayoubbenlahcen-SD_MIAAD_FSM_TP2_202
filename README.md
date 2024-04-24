@@ -279,7 +279,7 @@ Supposons que l'entité soit 'RendezVous'.
 
 Aussi, dans la classe HospitalServiceImpl, nous allons apporter une modification à la fonction saveRDV qui nous permettra d'effectuer la sauvegarde de l'objet RendezVous comme suit :
 
-@Service
+         @Service
 @Transactional
 public class HospitalServiceImpl implements IHospitalService {
 
@@ -309,6 +309,8 @@ public class HospitalServiceImpl implements IHospitalService {
         return rendezxVousRepository.save(rendez_vous)
     }
 }
+
+
 
 si en veux faire la partie web en va ajouter un package 'web' ou en va creer
 une classe PatientController qui va nous permettons de faire  controller
