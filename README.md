@@ -187,39 +187,41 @@ Voici le code que j'ai fais comme teste:
     - @OneToMany(mappedBy = "patient") : permet de faire le mapping et la liaison entre deux tables, Patient et RendezVous. "mappedBy = 'patient'" indique que 'patient' est l'attribut de la classe RendezVous qui représente la relation entre les deux.
 
 Même si nous avons déjà utilisé ces annotations dans le code précédent, voici un exemple d'utilisation pour l'entité Patient :
-    
- @Entity
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
-public class Patient {
 
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    - @Entity
+	@Data
+	@AllArgsConstructor
+	@NoArgsConstructor
+	public class Patient {
+	
+	    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+	    private Long id;
+	
+	    private String nom;
+	
+	    @Temporal(TemporalType.DATE)
+	    private Date DateNaissance;
+	
+	    private boolean malade;
+	
+	    @OneToMany(mappedBy = "patient")
+	    private Collection<RendezVous> rendezVous;
+	}
+	
+	"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+	maintenant on va faire un teste:
+	toute en implimentant l'inteface CommandLineRunner
+	pour utiliser la  methode run qui va etre executer apres que Spring soit en marche
+	ou bien on peut faire une methode qui va nous retournons un objet de type CommandeLineRunner  comme suite :
+	
+		CommandLineRunner start(IHospitalService hospitalService,
+								IPationtRepository pationtRepository,
+								IMedecinRepository medecinRepository,
+								IRendezVousRepository rendezVousRepository){
+		    /// ici on va faire notre petit code
+				}}
 
-    private String nom;
 
-    @Temporal(TemporalType.DATE)
-    private Date DateNaissance;
-
-    private boolean malade;
-
-    @OneToMany(mappedBy = "patient")
-    private Collection<RendezVous> rendezVous;
-}
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-maintenant on va faire un teste:
-toute en implimentant l'inteface CommandLineRunner
-pour utiliser la  methode run qui va etre executer apres que Spring soit en marche
-ou bien on peut faire une methode qui va nous retournons un objet de type CommandeLineRunner  comme suite :
-
-	CommandLineRunner start(IHospitalService hospitalService,
-							IPationtRepository pationtRepository,
-							IMedecinRepository medecinRepository,
-							IRendezVousRepository rendezVousRepository){
-	    /// ici on va faire notre petit code
-			}}
    
 a l'aide des objet passé en parametre de la fonctiion de start() on na la possiblite  de manipuler les donnes qui de la table
 pacient  medecine et aussi les autre entity
