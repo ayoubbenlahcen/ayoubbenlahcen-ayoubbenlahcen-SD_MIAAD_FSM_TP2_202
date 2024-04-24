@@ -1,4 +1,4 @@
-# SD_MIAAD_FSM_TP2_2024 petit raport
+# SD_MIAAD_FSM_TP2_2024 petit rapport
 
 Pour ce qui concerne ce TP2, nous avons essayé de le diviser en 3 parties :
 
