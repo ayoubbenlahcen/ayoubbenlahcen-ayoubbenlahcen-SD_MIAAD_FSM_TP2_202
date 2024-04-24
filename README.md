@@ -133,7 +133,7 @@ Mais tout d'abord, voici l'architecture de notre première application Spring:
 
          - IRendezVousRepository
 
-        - Comme mentionné précédemment, chaque entité dispose d'un repository distinct. 
+Comme mentionné précédemment, chaque entité dispose d'un repository distinct. 
 Prenons l'exemple de IPatientRepository, bien que tous les autres suivent la même structure, avec uniquement des changements au niveau du nom de l'interface et de l'entité associée au repository. Il est crucial de noter la nécessité d'étendre JpaRepository<Patient, Long> pour que le repository fonctionne correctement. Dans ce contexte, 'Patient' représente l'entité à laquelle le repository est lié, tandis que 'Long' spécifie le type de l'identifiant de l'entité.
 
 
