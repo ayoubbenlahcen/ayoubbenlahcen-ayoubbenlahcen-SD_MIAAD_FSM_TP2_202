@@ -312,6 +312,4 @@ Aussi, dans la classe HospitalServiceImpl, nous allons apporter une modification
 
 
 
-si en veux faire la partie web en va ajouter un package 'web' ou en va creer
-une classe PatientController qui va nous permettons de faire  controller
-les intefaces de patient a partir de web.
+Si nous voulons ajouter une partie web, nous allons créer un package 'web' où nous créerons une classe PatientController qui nous permettra de contrôler les interfaces du patient à partir du web.
