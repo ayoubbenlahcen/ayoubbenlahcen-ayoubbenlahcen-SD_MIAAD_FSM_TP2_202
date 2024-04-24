@@ -230,7 +230,7 @@ Cependant, le problème avec cette méthode d'implémentation est qu'à chaque f
 
 La solution consiste à ajouter un nouveau package nommé 'Service' qui contiendra l'interface HospitalService. Dans cette interface, nous implémenterons les différentes fonctions qui correspondent à notre logique métier, comme suit :
 
-    @Service
+@Service
 @Transactional
 public class HospitalServiceImpl implements IHospitalService {
     private IPationtRepository pationtRepository ;
