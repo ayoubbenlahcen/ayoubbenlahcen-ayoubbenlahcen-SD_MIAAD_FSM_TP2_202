@@ -188,7 +188,7 @@ Voici le code que j'ai fais comme teste:
 
 Même si nous avons déjà utilisé ces annotations dans le code précédent, voici un exemple d'utilisation pour l'entité Patient :
 
-    - @Entity
+     	@Entity
 	@Data
 	@AllArgsConstructor
 	@NoArgsConstructor
