@@ -223,19 +223,14 @@ Même si nous avons déjà utilisé ces annotations dans le code précédent, vo
 
 
    
-a l'aide des objet passé en parametre de la fonctiion de start() on na la possiblite  de manipuler les donnes qui de la table
-pacient  medecine et aussi les autre entity
+Avec les objets passés en paramètres de la fonction start(), nous avons la possibilité de manipuler les données des tables Patient, Médecin et d'autres entités également.
+
+Cependant, le problème avec cette méthode d'implémentation est qu'à chaque fois qu'une nouvelle entité est ajoutée, il est nécessaire d'ajouter son repository à l'ensemble des repositories qui sont des paramètres de la méthode run. Cette approche n'est pas idéale.
 
 
-la seule probleme quand on a avec cette facon d'implimentation c'est que chaque fois quand on a un nouveau entite
-il faut ajouter son trepository  a l'ensempble des repositories qui sont dans les parametre de la methode run
+La solution consiste à ajouter un nouveau package nommé 'Service' qui contiendra l'interface HospitalService. Dans cette interface, nous implémenterons les différentes fonctions qui correspondent à notre logique métier, comme suit :
 
-ce qui n'est pas bien
-
-
-la solution c'st de faire ajouter un nouveau package 'Service' u qui va contenir l'inteface HospitalService
-telque dans cette dernier on va essayer d'implimenter les deferent fonctions qui correspond anotre code metier  comme suivant  :
-@Service
+    @Service
 @Transactional
 public class HospitalServiceImpl implements IHospitalService {
     private IPationtRepository pationtRepository ;
@@ -263,6 +258,8 @@ public class HospitalServiceImpl implements IHospitalService {
     //               ou la fonction findPatient() pour chercher un patient
     //               et d'autre pour les autres entités
 }
+
+
 
 quand  on va utiliser la methode save par exemple  dans le cas suivant :
 Pacient pacientSave = reporitoryPatient.save(pacient) (toujours l'objet sauvEgarder eSt routourné donc je peut le recoupere si j'ai besoin de ça )
