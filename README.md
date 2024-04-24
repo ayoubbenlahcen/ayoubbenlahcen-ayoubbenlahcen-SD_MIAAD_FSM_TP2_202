@@ -133,10 +133,10 @@ Mais tout d'abord, voici l'architecture de notre première application Spring:
 
          - IRendezVousRepository
 
-   Comme j'ai dit deja un repository pour chaque netité , et voici la forme de chaque repository :
+        - Comme mentionné précédemment, chaque entité dispose d'un repository distinct. 
+Prenons l'exemple de IPatientRepository, bien que tous les autres suivent la même structure, avec uniquement des changements au niveau du nom de l'interface et de l'entité associée au repository. Il est crucial de noter la nécessité d'étendre JpaRepository<Patient, Long> pour que le repository fonctionne correctement. Dans ce contexte, 'Patient' représente l'entité à laquelle le repository est lié, tandis que 'Long' spécifie le type de l'identifiant de l'entité.
 
-   on va prendre l'exemple de  IPationtRepository et pour les autre ils ont la meme forme seulement au niveau du nom de l'inteface ou il ya le changement et l'entite qui va lieé a le repository aussi il faut faire attention au
-   "extends JpaRepository<Patient, Long>" c'est a dire pour qu'un repository marcher bien il faut qu'il va heriter a partir de JpaRepository , et pour  <Patient, Long> comme j'ai dit deja  : Patient c'est l'etité dont la quel ce repository     est construit  , Long ; c'est pour le type de l'id de l'entité.
+
 ![image](https://github.com/ayoubbenlahcen/ayoubbenlahcen-ayoubbenlahcen-SD_MIAAD_FSM_TP2_2024/assets/152870306/dd9adb20-9702-49f7-ac5b-21cf02408eae)
 
 7. Tester quelques opérations de gestion de patients :
