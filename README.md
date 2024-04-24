@@ -120,7 +120,7 @@ Mais tout d'abord, voici l'architecture de notre première application Spring:
    
 5. Créer les interfaces JPA Repositories basée sur Spring data
 
-         - Tel que nous avons créé un package Repository où nous avons créé une interface Repository pour chaque entité, ou nous allons définir l'ensemble des prototypes, ainsi que les syntaxes que Spring utilise pour manipuler les données correspondant à chaque entité.
+         - Tel que nous avons créé un package Repository où nous avons créé une interface Repository pour chaque entité, ou nous allons définir l'ensemble des prototypes, ainsi que les syntaxes que Spring utilise pour manipuler les données 	   correspondant à chaque entité.
        
 
        Voici les defferents Repositories qu'on a  creé :
