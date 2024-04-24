@@ -280,35 +280,35 @@ Supposons que l'entité soit 'RendezVous'.
 Aussi, dans la classe HospitalServiceImpl, nous allons apporter une modification à la fonction saveRDV qui nous permettra d'effectuer la sauvegarde de l'objet RendezVous comme suit :
 
          @Service
-@Transactional
-public class HospitalServiceImpl implements IHospitalService {
-
-    private IPationtRepository pationtRepository ;
-    private  IMedecinRepository medecinRepository ;
-    private IConsultationRepository consultationRepository ;
-    private IRendezVousRepository rendezxVousRepository ;
-
-    // cette c'est pour faire l'injection des dependance en utlisant la methde du constructeur
-    // il est possible de changer cette en utilsant les anotations @Autowired
-    // en le mettre avand la declaration de chaque variable de type Repository
-
-    public HospitalServiceImpl(IPationtRepository pationtRepository,
-                               IMedecinRepository medecinRepository,
-                               IConsultationRepository consultationRepository,
-                               IRendezVousRepository rendezxVousRepository) {
-
-        this.pationtRepository = pationtRepository;
-        this.medecinRepository = medecinRepository;
-        this.consultationRepository = consultationRepository;
-        this.rendezxVousRepository = rendezxVousRepository;
-    }
-
-    public RendezVous saveRDV ( RendezVous rendez_vous){
-        // utiliser Le UUID pour generer une chaine aleatoire unique (qui depend de la date de systeme)
-        rendez_vous.setId(UUID.randomUUID().toString())
-        return rendezxVousRepository.save(rendez_vous)
-    }
-}
+	 @Transactional
+	 public class HospitalServiceImpl implements IHospitalService {
+	
+	    private IPationtRepository pationtRepository ;
+	    private  IMedecinRepository medecinRepository ;
+	    private IConsultationRepository consultationRepository ;
+	    private IRendezVousRepository rendezxVousRepository ;
+	
+	    // cette c'est pour faire l'injection des dependance en utlisant la methde du constructeur
+	    // il est possible de changer cette en utilsant les anotations @Autowired
+	    // en le mettre avand la declaration de chaque variable de type Repository
+	
+	    public HospitalServiceImpl(IPationtRepository pationtRepository,
+	                               IMedecinRepository medecinRepository,
+	                               IConsultationRepository consultationRepository,
+	                               IRendezVousRepository rendezxVousRepository) {
+	
+	        this.pationtRepository = pationtRepository;
+	        this.medecinRepository = medecinRepository;
+	        this.consultationRepository = consultationRepository;
+	        this.rendezxVousRepository = rendezxVousRepository;
+	    }
+	
+	    public RendezVous saveRDV ( RendezVous rendez_vous){
+	        // utiliser Le UUID pour generer une chaine aleatoire unique (qui depend de la date de systeme)
+	        rendez_vous.setId(UUID.randomUUID().toString())
+	        return rendezxVousRepository.save(rendez_vous)
+	    }
+	 }
 
 
 
