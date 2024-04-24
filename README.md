@@ -267,7 +267,7 @@ Quand on utilise la méthode save, par exemple dans le cas suivant :
 Pacient pacientSave = reporitoryPatient.save(pacient) (toujours l'objet sauvEgarder eSt routourné donc je peut le recoupere si j'ai besoin de ça )
 
 
-###Remarque : 
+### Remarque : 
 L'une des remarques les plus importantes est d'utiliser des identifiants (ID) d'entités de type String. Pour cela, nous allons utiliser UUID.randomUUID().toString() de la manière suivante :
 
 Supposons que l'entité soit 'RendezVous'. 
