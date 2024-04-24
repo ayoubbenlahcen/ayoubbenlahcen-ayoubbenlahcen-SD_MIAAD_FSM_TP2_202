@@ -173,23 +173,20 @@ Ou le code suivant pour  migrer de H2 Database vers MySQ :
 
         spring.jpa.properties.hibernate.dialect= org.hibernate.dialect.MariaDBDialect
 
-      Voivci le code que j'ai fais comme teste:
+Voici le code que j'ai fais comme teste:
 ![image](https://github.com/ayoubbenlahcen/ayoubbenlahcen-ayoubbenlahcen-SD_MIAAD_FSM_TP2_2024/assets/152870306/58fcd53f-2c45-4ce5-9596-e0ddb966266c)
 ![image](https://github.com/ayoubbenlahcen/ayoubbenlahcen-ayoubbenlahcen-SD_MIAAD_FSM_TP2_2024/assets/152870306/7098945b-acb2-4461-85d8-9e4e75b954a0)
 
-8. Le plus important maintenant est de comprendre comment Spring parvient à reconnaître les entités dans notre application. La réponse réside dans les annotations suivantes :
+8. Ce qui est crucial maintenant, c'est de comprendre comment Spring parvient à reconnaître les entités dans notre application. La réponse réside dans les annotations suivantes :
 
-  - @Entity : qui indique que la classe suivant va etre une table dans la base de donnée
-  - @Data   : pour les getter et les setter
-  - @AllArgsConstructor : pour un constructeur avec tout les parametre
-  - @NoArgsConstructor : pour un contructeur sans parametre
-  - @Id @GeneratedValue(strategy = GenerationType.IDENTITY) : pour specifier Id de l'entite puis il va etre incrementer automatiquement grace a @GeneratedValue
-  - @OneToMany(mappedBy = "patient") : c'est pour faire le mapping autrement dite faire les multiplicite et
-                                   aussi la liaison entre les deux tableaux Patient et aussi RendezVous
-                                   A savoir s'il vous plait que : map pedBy = "patient"
-                                                                     patient est est attribue dans la classe RendezVous
+    - @Entity : indique que la classe suivante représente une table dans la base de données.
+    - @Data : génère automatiquement les getters et setters.	
+    - @AllArgsConstructor : crée un constructeur avec tous les paramètres.
+    - @NoArgsConstructor : crée un constructeur sans paramètre.
+    - @Id @GeneratedValue(strategy = GenerationType.IDENTITY) : spécifie l'identifiant de l'entité, qui sera incrémenté automatiquement grâce à @GeneratedValue.
+    - @OneToMany(mappedBy = "patient") : permet de faire le mapping et la liaison entre deux tables, Patient et RendezVous. "mappedBy = 'patient'" indique que 'patient' est l'attribut de la classe RendezVous qui représente la relation entre les deux.
 
-    Même si nous avons utilisé ces annotations précédemment dans le code, voici un exemple d'utilisation pour l'entité Patient :
+Même si nous avons déjà utilisé ces annotations dans le code précédent, voici un exemple d'utilisation pour l'entité Patient :
     
  @Entity
 @Data
