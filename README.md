@@ -279,9 +279,7 @@ supposant que l'entite est 'RendezVous'
       le save de l'objet de RendezVous comme suite :
 
 @Service
-
 @Transactional
-
 public class HospitalServiceImpl implements IHospitalService {
 
     private IPationtRepository pationtRepository ;
