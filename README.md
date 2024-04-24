@@ -147,10 +147,7 @@ Prenons l'exemple de IPatientRepository, bien que tous les autres suivent la mê
     - Mettre à jour un patient 
     - supprimer un patient
 
-      maitenant pour tester est ce que notre base de donne est creé avce succée  on a besoin de specifier où notre base de donées se trouve c'est pour cela on va partir vers
-      le fichier  'application.properties'
-      
-      puis faire soit dans le cas d'utilisation de la base de donne H2:
+Maintenant, pour tester si notre base de données a été créée avec succès, nous devons spécifier son emplacement dans le fichier 'application.properties'. Dans le cas où nous utilisons la base de données H2, voici ce que nous devons faire :
       
             spring.application.name=Hospital__TP2__Projet-Hospital__MIAAD__2024
 
