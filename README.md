@@ -157,7 +157,7 @@ Maintenant, pour tester si notre base de données a été créée avec succès, 
 
             spring.h2.console.enabled=true
 
-      ou le code suivant pour  migrer de H2 Database vers MySQ :
+Ou le code suivant pour  migrer de H2 Database vers MySQ :
       
         spring.application.name=Hospital__TP2__Projet-Hospital__MIAAD__2024
       
