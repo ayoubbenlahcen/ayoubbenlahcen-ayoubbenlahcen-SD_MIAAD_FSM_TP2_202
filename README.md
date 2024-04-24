@@ -263,16 +263,16 @@ public class HospitalServiceImpl implements IHospitalService {
 
 
 
-quand  on va utiliser la methode save par exemple  dans le cas suivant :
+Quand on utilise la méthode save, par exemple dans le cas suivant :
 Pacient pacientSave = reporitoryPatient.save(pacient) (toujours l'objet sauvEgarder eSt routourné donc je peut le recoupere si j'ai besoin de ça )
 
 
-l'un des remarques les plus importantes c'est de faire utiilser des ID des entités de type String:
+###Remarque : 
+L'une des remarques les plus importantes est d'utiliser des identifiants (ID) d'entités de type String. Pour cela, nous allons utiliser UUID.randomUUID().toString() de la manière suivante :
 
-alors  pour cela  on va utiliser les UUID.randomUUID().toString() comme suite :
+Supposons que l'entité soit 'RendezVous'. 
+À l'intérieur du repository correspondant à l'entité ayant un ID de type String, nous effectuerons la modification suivante :
 
-supposant que l'entite est 'RendezVous'
-    a L'interieure de l'opository  correspodant a l'entite qui a un Id de type String on  va faire le modefication suivant:
 
     -public interface IRendezVousRepository extends JpaRepository<RendezVous, String> {
      }
