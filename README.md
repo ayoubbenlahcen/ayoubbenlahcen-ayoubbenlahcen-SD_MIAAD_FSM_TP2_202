@@ -317,3 +317,4 @@ On va le faire dans le prochain TP .
 
 ![image](https://github.com/ayoubbenlahcen/ayoubbenlahcen-ayoubbenlahcen-SD_MIAAD_FSM_TP2_2024/assets/152870306/42b38f71-9d05-47fd-b0cf-e76aa2a959cf)
 
+![image](https://github.com/ayoubbenlahcen/ayoubbenlahcen-ayoubbenlahcen-SD_MIAAD_FSM_TP2_2024/assets/152870306/77782a46-44c4-43a7-a07e-cf4d8dd4c94d)
